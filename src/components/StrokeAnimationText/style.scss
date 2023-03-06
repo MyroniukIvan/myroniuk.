@@ -1,0 +1,21 @@
+.StrokeAnimation {
+   position: relative;
+   .container {
+      width: 100%;
+      margin-bottom: 3rem;
+   }
+   .floating-image {
+      pointer-events: none;
+      position: absolute;
+      z-index: 10;
+      // overflow: hidden;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      outline: none;
+
+      img {
+         width: 270px;
+      }
+   }
+}

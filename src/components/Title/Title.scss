@@ -1,0 +1,82 @@
+$desktop: 1220px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
+
+.section-title {
+   margin:50px 0;
+   .section__title {
+      h1 {
+         font-size: 3rem;
+      }
+      a {
+         font-weight: 600;
+         text-transform: uppercase;
+         font-size: 1.12rem;
+         letter-spacing: 7px;
+         opacity: 0.5;
+         text-decoration: none;
+         color: black;
+      }
+      p {
+         font-weight: 300;
+         text-transform: uppercase;
+         font-size: 1.12rem;
+         letter-spacing: 7px;
+         opacity: 0.5;
+      }
+   }
+}
+
+@media (max-width: $desktop) {
+   .section-title {
+      .section__title {
+         h1 {
+            font-size: 2.5rem;
+         }
+         p {
+            font-size: 1.4rem;
+         }
+      }
+   }
+}
+@media (max-width: $laptop) {
+   .section-title {
+      .section__title {
+         h1 {
+            font-size: 2rem;
+         }
+         p {
+            font-size: 1.2rem;
+         }
+      }
+   }
+}
+@media (max-width: $tablet) {
+   .section-title {
+      width: 100%;
+      flex-direction: column;
+      .section__title {
+         h1 {
+            font-size: 2rem;
+         }
+         p {
+            font-size: 1rem;
+         }
+      }
+   }
+}
+@media (max-width: $phone) {
+   .section-title {
+      flex-direction: column;
+      width: 100%;
+      .section__title {
+         h1 {
+            font-size: 1.5rem;
+         }
+         p {
+            font-size: 0.7rem;
+         }
+      }
+   }
+}

@@ -1,0 +1,108 @@
+$gray: rgb(171, 171, 171);
+$gray-charcoal: rgb(50, 50, 50);
+
+$desktop: 1220px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
+
+.about {
+   max-width: 80vw;
+   width: 100%;
+   height: 100%;
+   // position: fixed;
+   top: 0;
+   left: 0;
+   margin: 0 auto;
+   @media (max-width: $laptop) {
+      max-width: 90vw;
+   }
+   @media (max-width: $tablet) {
+      max-width: 90vw;
+   }
+   @media (max-width: $phone) {
+      max-width: 90vw;
+   }
+   .container {
+      max-width: 90vw;
+      width: 100%;
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      @media (max-width: $laptop) {
+         max-width: 95vw;
+      }
+      @media (max-width: $tablet) {
+         max-width: 95vw;
+      }
+      @media (max-width: $phone) {
+         max-width: 95vw;
+      }
+      .background {
+         color: rgb(255, 255, 255);
+         position: absolute;
+         font-size: 18vw;
+         font-weight: 700;
+         z-index: -1;
+         text-shadow: 0 0 29px rgba(0, 0, 0, 0.05);
+         top: 0;
+         @media (max-width: $tablet) {
+            display: none;
+         }
+         @media (max-width: $phone) {
+            display: none;
+         }
+      }
+      .wrapper {
+         .skils {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            // margin: 100px 0 100px 0;
+            width: 100%;
+            h3 {
+               font-weight: 600;
+               text-transform: uppercase;
+               font-size: 1rem;
+               letter-spacing: 7px;
+               color: $gray;
+            }
+            .skils-section {
+               width: 30%;
+               text-align: center;
+               margin: 50px auto;
+
+               @media (max-width: $laptop) {
+                  width: 40%;
+               }
+               @media (max-width: $tablet) {
+                  width: 100%;
+               }
+               @media (max-width: $phone) {
+                  width: 100%;
+               }
+               h2 {
+                  display: flex;
+                  font-size: 1.5em;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  line-height: 1.5;
+                  @media (max-width: $tablet) {
+                     font-size: 1.2em;
+                  }
+                  @media (max-width: $phone) {
+                     font-size: 1.1em;
+                  }
+                  p {
+                     color: rgb(108, 108, 108);
+                     margin: 0 10px 0 10px;
+                     font-size: 1.5rem;
+                     font-weight: 400;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,800&display=swap');
+
+$desktop: 1220px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
+
+$red: #ffffff;
+$black: #000000;
+* {
+   box-sizing: border-box;
+}
+header {
+   .inner-header {
+      position: relative;
+      z-index: 10;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo a {
+         font-weight: 700;
+         font-size: 1rem;
+         text-decoration: none;
+         color: $black;
+      }
+      .menu {
+         button {
+            border: none;
+            background: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 0.8rem;
+            mix-blend-mode: difference;
+         }
+      }
+   }
+   .hamburger-menu {
+      display: none;
+      z-index: 9;
+      top: 0;
+      left: 50%;
+      right: 0;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      @media (max-width: $laptop) {
+         left: 25%;
+      }
+      @media (max-width: $tablet) {
+         left: 0;
+      }
+      @media (max-width: $phone) {
+         left: 0;
+      }
+
+      .menu-secondary-background-color {
+         // background: $black;
+         opacity: 0.5;
+         background-color: rgba(0, 0, 0, 0.701);
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         position: fixed;
+         height: 100%;
+         width: 100%;
+         z-index: -1;
+      }
+      .menu-layer {
+         position: relative;
+         background: $red;
+         overflow: hidden;
+
+         .wrapper {
+            height: 100vh;
+            width: 100%;
+
+            .menu-links {
+               margin: 200px auto;
+               @media (max-width: $laptop) {
+                  margin: 150px auto;
+               }
+               @media (max-width: $tablet) {
+                  margin: 150px auto;
+               }
+               @media (max-width: $phone) {
+                  margin: 150px auto;
+               }
+               nav {
+                  display: block;
+
+                  ul {
+                     margin: 10%;
+                     padding: 0;
+
+                     li {
+                        list-style: none;
+                        font-size: 5rem;
+                        font-weight: 700;
+                        cursor: pointer;
+                        height: 140px;
+                        overflow: hidden;
+                        // position: relative;
+
+                        @media (max-width: $laptop) {
+                           font-size: 5rem;
+                           height: 135px;
+                        }
+                        @media (max-width: $tablet) {
+                           font-size: 4rem;
+                           height: 110px;
+                        }
+                        @media (max-width: $phone) {
+                           font-size: 3rem;
+                           height: 80px;
+                        }
+                        a {
+                           position: absolute;
+                           color: rgb(255, 255, 255);
+                           -webkit-text-stroke: 3px black;
+                           text-decoration: none;
+
+                           @media (max-width: $tablet) {
+                              -webkit-text-stroke: 2px black;
+                           }
+                           @media (max-width: $phone) {
+                              -webkit-text-stroke: 2px black;
+                           }
+                           &:hover {
+                              color: $black;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

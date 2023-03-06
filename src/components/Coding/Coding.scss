@@ -1,0 +1,122 @@
+$gray: rgb(171, 171, 171);
+$gray-charcoal: rgb(50, 50, 50);
+$desktop: 1220px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
+
+.card-secondary {
+  // width: 65vw;
+  padding: 50px 50px 0;
+  margin: 25px auto 200px;
+
+  &-header {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-family: degular, sans-serif;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 250px;
+    .project-info {
+      flex: 0.8;
+      // width: 500px;
+      margin: 20px 0;
+      h1 {
+        font-size: 1.9rem;
+        font-weight: 600;
+      }
+      ul,
+      p {
+        margin: 20px 0;
+        font-size: 1.3rem;
+        line-height: 40px;
+        font-weight: 200;
+        opacity: 0.5;
+      }
+      .work_links {
+        font-size: 1.2rem;
+
+        .project-link {
+          margin-right: 10px;
+          font-weight: 600;
+          color: #000;
+        }
+        .work_code {
+          color: rgb(0, 0, 0);
+          font-size: 1.5rem;
+          margin: 10px;
+          &:hover {
+            color: rgb(109, 109, 109);
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+    .project-image {
+      width: 800px;
+      overflow: hidden;
+    }
+  }
+}
+
+//? Mobile
+@media (max-width: $desktop) {
+  .card {
+    margin: 50px auto;
+
+    .container {
+      justify-content: space-between;
+      margin-bottom: 50px;
+
+      .project-info {
+        flex: 0.8;
+        ul,
+        p {
+          font-size: 1.2rem;
+          line-height: 35px;
+        }
+      }
+      .project-image {
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: $laptop) {
+  .card {
+    .container {
+      .project-image {
+        width: 450px;
+      }
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .card {
+    .container {
+      flex-direction: column-reverse;
+      .project-info {
+        width: 100%;
+      }
+      .project-image {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: $phone) {
+  .card {
+    .container {
+      .project-info {
+      }
+      .project-image {
+      }
+    }
+  }
+}

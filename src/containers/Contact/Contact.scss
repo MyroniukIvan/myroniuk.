@@ -1,0 +1,84 @@
+$desktop: 1220px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
+
+.contact-container {
+   width: 90vw;
+   margin: 0 auto;
+
+   .background {
+      color: rgb(255, 255, 255);
+      position: absolute;
+      font-size: 18vw;
+      font-weight: 700;
+      z-index: -1;
+      text-shadow: 0 0 29px rgba(0, 0, 0, 0.05);
+      top: 0;
+      @media (max-width: $tablet) {
+         display: none;
+      }
+      @media (max-width: $phone) {
+         display: none;
+      }
+   }
+
+   .contact {
+      width: 65vw;
+      margin: 250px auto;
+      @media (max-width: $laptop) {
+         width: 80vw;
+      }
+      @media (max-width: $tablet) {
+         width: 90vw;
+      }
+      @media (max-width: $phone) {
+      margin: 150px auto;
+
+         width: 90vw;
+      }
+
+      h1 {
+         font-size: 3rem;
+         margin: 0 0 1rem;
+         @media (max-width: $tablet) {
+            font-size: 2.1rem;
+         }
+         @media (max-width: $phone) {
+            font-size: 2rem;
+         }
+      }
+      p {
+         font-size: 1.7rem;
+         color: rgba(0, 0, 0, 0.55);
+         margin-bottom: 50px;
+              @media (max-width: $tablet) {
+         font-size: 1.2rem;
+
+      }
+      @media (max-width: $phone) {
+         font-size: 1rem;
+
+      }
+         a {
+            color: rgba(0, 0, 0, 0.55);
+            text-decoration: none;
+            display: inline-block;
+
+            &::after {
+               content: '';
+               display: block;
+               width: 0;
+               height: 2px;
+               background: #000;
+               transition: width 0.3s;
+            }
+
+            &:hover::after {
+               width: 100%;
+               transition: width 0.3s;
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+$desktop: 1220px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
+
+.footer {
+   bottom: 0;
+   width: 100%;
+   border-top: 1px solid rgb(155, 155, 155);
+   display: flex;
+
+   color: rgb(255, 255, 255);
+   background-color: rgb(0, 0, 0);
+
+   .box-footer {
+      margin: 70px auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      @media (max-width: $laptop) {
+         flex-direction: column;
+      }
+      @media (max-width: $tablet) {
+         flex-direction: column;
+      }
+      @media (max-width: $phone) {
+         flex-direction: column;
+      }
+
+      .wrapper {
+         display: flex;
+         flex-direction: column;
+         align-self: start;
+         margin-bottom: 20px;
+      }
+      .social-icons {
+         ul {
+            list-style: none;
+            display: flex;
+            li {
+               margin: 0 10px 0 0;
+               transition: 0.4s;
+
+               a {
+                  font-size: 1.4rem;
+                  color: rgb(255, 255, 255);
+               }
+               &:hover {
+                  color: rgb(109, 109, 109);
+                  transform: scale(1.2);
+               }
+            }
+         }
+      }
+   }
+}

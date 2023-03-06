@@ -1,0 +1,139 @@
+{
+   "hero-1": {
+      "title": "Master the front-end with finesse",
+      "description": "The assignment is supposed to be executed as simple as possible. Code the template in HTML/CSS and try to avoid 3. party frameworks as much as possible. Creating the page with React components will grant extra megamate bonus points.",
+      "href": "#tiles",
+      "appearances": {
+         "inner-width": "normal",
+         "href-block": true,
+         "color-scheme": "primary"
+      }
+   },
+   "tiles": [
+      {
+         "title": "I Imagined that Things Were Speaking",
+         "image": "https://raw.githubusercontent.com/rommel-dk/front-end-test/master/assignment-assets/images/tiles-image-1.jpg",
+         "image-alt": "I Imagined that Things Were Speaking",
+         "date": "29 August 2019",
+         "author": "Jams Bonham",
+         "author-href": "#",
+         "type": "Project",
+         "href": "#",
+         "appearances": {
+            "color-scheme": "alt"
+         }
+      },
+      {
+         "title": "Mounting parts in metal and wood for glass objects",
+         "image": "https://raw.githubusercontent.com/rommel-dk/front-end-test/master/assignment-assets/images/tiles-image-2.jpg",
+         "image-alt": "",
+         "date": "18 August 2020",
+         "author": "M!kkel Rommelhoff",
+         "author-href": "#",
+         "type": "Project",
+         "href": "#",
+         "appearances": {
+            "color-scheme": "alt"
+         }
+      },
+      {
+         "title": "Thanks to the system - from logic to physics",
+         "image": "https://raw.githubusercontent.com/rommel-dk/front-end-test/master/assignment-assets/images/tiles-image-3.jpg",
+         "image-alt": "",
+         "date": "3 Feburary 2020",
+         "author": "",
+         "author-href": "",
+         "type": "Another project",
+         "href": "#",
+         "appearances": {
+            "color-scheme": "alt"
+         }
+      },
+      {
+         "title": "I Imagined that Things Were Speaking",
+         "image": "https://raw.githubusercontent.com/rommel-dk/front-end-test/master/assignment-assets/images/tiles-image-4.jpg",
+         "image-alt": "",
+         "date": "18 August 2019",
+         "author": "Philio Rosing",
+         "author-href": "#",
+         "type": "Anonymous",
+         "href": "#",
+         "appearances": {
+            "color-scheme": "alt"
+         }
+      },
+      {
+         "title": "Yellow forever and some lines too",
+         "image": "https://raw.githubusercontent.com/rommel-dk/front-end-test/master/assignment-assets/images/tiles-image-5.jpg",
+         "image-alt": "Yellow forever and some lines too",
+         "date": "29 August 2019",
+         "author": "Andr\u00e9 Kallehauge",
+         "author-href": "#",
+         "type": "Project",
+         "href": "#",
+         "appearances": {
+            "color-scheme": "alt"
+         }
+      },
+      {
+         "title": "Beware when you go to Mars for traveling",
+         "image": "https://raw.githubusercontent.com/rommel-dk/front-end-test/master/assignment-assets/images/tiles-image-6.jpg",
+         "image-alt": "Beware when you go to Mars for traveling",
+         "date": "29 August 2019",
+         "author": "",
+         "type": "Marmor",
+         "href": "#",
+         "appearances": {
+            "color-scheme": "alt"
+         }
+      }
+   ],
+   "hero-2": {
+      "title": "Your chance",
+      "subtitle": "Get on the skill train now",
+      "description": "The assignment must be delivered as a pull request to the assignment repository and we appreciate running commits so we can see how you go from our small layout to a final awesome product.",
+      "href": "#",
+      "appearances": {
+         "inner-width": "narrow",
+         "color-scheme": "secondary"
+      }
+   },
+   "banner": {
+      "title": "Red Arrows",
+      "subtitle": "#extra",
+      "author": "Pil Damgaard",
+      "year": "2018",
+      "description": "This section is actually a little extra that can be added if you feel confident while working and the time aint sprinting.",
+      "href_description": "#",
+      "href": "imagewide",
+      "image": "https://raw.githubusercontent.com/rommel-dk/front-end-test/master/assignment-assets/images/banner.jpg",
+      "image-alt": "This banner is for real",
+      "appearances": {
+         "color-scheme": "secondary",
+         "href-block-next": "imagewide"
+      }
+   },
+   "imagewide": {
+      "title": "",
+      "image": "https://raw.githubusercontent.com/rommel-dk/front-end-test/master/assignment-assets/images/image-full-width.png",
+      "image-alt": "Find us at the center of the universe",
+      "href": "",
+      "appearances": {
+         "href-block": false,
+         "color-scheme": "primary"
+      }
+   },
+   "imagetext": {
+      "title": "We use tools like NPM/Gulp/Webpack to preprocess files and PostCSS for some mean, lean, killing machine code and React JS is taking over WordPress one step at a time. ",
+      "image": "https://raw.githubusercontent.com/rommel-dk/front-end-test/master/assignment-assets/images/text-media-right.png",
+      "image-alt": "Find us at the center of the universe",
+      "href": "https://github.com/rommel-dk/front-end-test/compare",
+      "href-text": "Pull request",
+      "href-text-alt": "Don\u2019t be shy to commit",
+      "appearances": {
+         "href-block": false,
+         "color-scheme": "secondary",
+         "position-text": "left"
+      }
+   }
+}
