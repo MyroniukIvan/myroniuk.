@@ -21,6 +21,7 @@ const data = [{
     src: Kredopol,
     name: 'Kredopol',
     title: 'Kredopol. Freelance',
+    web: 'https://pl-n67vxn7rx-myroniukivan.vercel.app/',
     codeSource: 'https://github.com/MyroniukIvan/pl',
     description: 'The project was fully created by me with all requirements provided by the customer. This web-site was built only for advertising purposes',
     language: ['HTML', 'CSS', 'React'],
