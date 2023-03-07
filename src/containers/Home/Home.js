@@ -37,7 +37,7 @@ function Home() {
                 </div>
                 <Title title='Projects Section' text='SELECTED PROJECTS'/>
                 <ProjectSection/>
-                <Title title='Projects Section' text='PHOTOGRAPHY & LOGOs'/>
+                <Title title='Projects Section' text='SOME INTERESTING IDEAS'/>
                 <SkillsSection/>
                 <Title
                     title='Open Source Exercices'

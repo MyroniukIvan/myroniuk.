@@ -24,12 +24,15 @@ $phone: 480px;
 
       @media (max-width: $laptop) {
          flex-direction: column;
+
       }
       @media (max-width: $tablet) {
          flex-direction: column;
+
       }
       @media (max-width: $phone) {
          flex-direction: column;
+         padding-left: 50px;
       }
 
       .wrapper {

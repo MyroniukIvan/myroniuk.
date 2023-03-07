@@ -6,7 +6,7 @@ import './Title.scss';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-const Title = ({ title, text, paragraf, email }) => {
+const Title = ({ title, text, paragraph, email }) => {
    const revealRefs = useRef([]);
    revealRefs.current = [];
 
@@ -41,10 +41,10 @@ const Title = ({ title, text, paragraf, email }) => {
          <div className='section__title'>
             <p>{text}</p>
             <h1>{title}</h1>
-            <a href='mailto:ghofranebh90@gmail.com'>{email}</a>
+            <a href='mailto:vanyamironyuk5@gmail.com'>{email}</a>
          </div>
-         <div className='section-paragraf'>
-            <p>{paragraf}</p>
+         <div className='section-paragraph'>
+            <p>{paragraph}</p>
          </div>
       </div>
    );

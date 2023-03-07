@@ -94,7 +94,7 @@ function ProjectSection() {
                             </a>
                         </div>
                     </div>
-                    <div className='project-image ' ref={addToRefs}>
+                    <div className='project-image' ref={addToRefs}>
                         <motion.img
                             transition={transition}
                             whileHover={{scale: 1.03}}

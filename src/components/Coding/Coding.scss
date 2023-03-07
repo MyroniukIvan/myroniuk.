@@ -65,7 +65,7 @@ $phone: 480px;
 
 //? Mobile
 @media (max-width: $desktop) {
-  .card {
+  .card-secondary {
     margin: 50px auto;
 
     .container {
@@ -88,7 +88,7 @@ $phone: 480px;
 }
 
 @media (max-width: $laptop) {
-  .card {
+  .card-secondary {
     .container {
       .project-image {
         width: 450px;
@@ -97,7 +97,7 @@ $phone: 480px;
   }
 }
 @media (max-width: $tablet) {
-  .card {
+  .card-secondary {
     .container {
       flex-direction: column-reverse;
       .project-info {
