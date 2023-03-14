@@ -9,7 +9,9 @@ $phone: 480px;
   // width: 65vw;
   padding: 50px 50px 0;
   margin: 25px auto 200px;
-
+  .project-info {
+    display: flex;
+  }
   &-header {
     display: flex;
     justify-content: center;
@@ -19,6 +21,7 @@ $phone: 480px;
   .container {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
     margin-bottom: 250px;
     .project-info {
@@ -26,11 +29,13 @@ $phone: 480px;
       // width: 500px;
       margin: 20px 0;
       h1 {
+        text-align: center;
         font-size: 1.9rem;
         font-weight: 600;
       }
       ul,
       p {
+        text-align: center;
         margin: 20px 0;
         font-size: 1.3rem;
         line-height: 40px;

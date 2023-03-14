@@ -5,6 +5,7 @@ import './SkillsSection.scss';
 import coding from '../../assets/images/coding.jpg';
 import {motion} from 'framer-motion';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const transition = {
@@ -36,42 +37,42 @@ function SkillsSection() {
     };
 
     return (<div className='section-skills'>
-            <div className='section-grid'>
-                <div className='container'>
-                    {data.map((data, id) => (<div key={id} className='wrapper' ref={addToRefs}>
-                            <Link to={data.name}>
-                                <motion.div
-                                    transition={transition}
-                                    whileHover={{
-                                        scale: 1.1,
-                                    }}
-                                >
-                                    <motion.img
-                                        src={data.src}
-                                        width='100%'
-                                        height='100%'
-                                        alt={data.name}
-                                    />
+        <div className='section-grid'>
+            <div className='container'>
+                {data.map((data, id) => (<div key={id} className='wrapper' ref={addToRefs}>
+                    <Link to={data.name}>
+                        <motion.div
+                            transition={transition}
+                            whileHover={{
+                                scale: 1.1,
+                            }}
+                        >
+                            <motion.img
+                                src={data.src}
+                                width='100%'
+                                height='100%'
+                                alt={data.name}
+                            />
 
-                                    <motion.div
-                                        whileHover={{opacity: 1}}
-                                        className='project-info'
-                                    >
-                                        <h4>{data.title}</h4>
-                                        <Link to={'/coding'} className='project-link' id={'#about'}>
-                                            See more
-                                        </Link>
-                                    </motion.div>
+                            <motion.div
+                                whileHover={{opacity: 1}}
+                                className='project-info'
+                            >
+                                <h4>{data.title}</h4>
+                                <Link to={'/coding'} className='project-link' id={'#about'}>
+                                    See more
+                                </Link>
+                            </motion.div>
 
-                                    <motion.div className='project-title'>
-                                        <h4>{data.title}</h4>
-                                    </motion.div>
-                                </motion.div>
-                            </Link>
-                        </div>))}
-                </div>
+                            <motion.div className='project-title'>
+                                <h4>{data.title}</h4>
+                            </motion.div>
+                        </motion.div>
+                    </Link>
+                </div>))}
             </div>
-        </div>);
+        </div>
+    </div>);
 }
 
 export default SkillsSection;
