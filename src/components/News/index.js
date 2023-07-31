@@ -7,9 +7,7 @@ const News = () => {
       <section>
          <div>
             <section className='news-message' id={'coding'}>
-               <p>Website and user interface designer.</p>
-               <p>Website and user interface designer.</p>
-               <p>Website and user interface designer.</p>
+               <p>Full stack dev</p>
             </section>
          </div>
       </section>

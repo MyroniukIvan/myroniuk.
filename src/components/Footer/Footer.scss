@@ -24,10 +24,12 @@ $phone: 480px;
 
       @media (max-width: $laptop) {
          flex-direction: column;
+         padding-left: 50px;
 
       }
       @media (max-width: $tablet) {
          flex-direction: column;
+         padding-left: 50px;
 
       }
       @media (max-width: $phone) {

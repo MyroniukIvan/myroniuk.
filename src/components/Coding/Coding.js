@@ -20,60 +20,8 @@ const Coding = () => {
             <div className='container'>
                 <div className='project-info'>
                     <div>
-                        <h1>Willow Shop</h1>
-                        <p>
-                            Here I want to show you one of <cite>the most largest</cite> my projects.
-                            It was originally <FaLessThan/>Willow-Shop<FaGreaterThan/>
-                            , but after <br/> we renamed it and
-                            adjusted to an already existing business
-                        </p>
-                        <p>
-                            The hardest for us at the time was manipulating data with <cite>database</cite>. For this we
-                            were using
-                            Firebase.
-                        </p>
+                        <p>Page is still building...</p>
                     </div>
-                    <div className='work_links'>
-                        <a href="https://github.com/Gituservn/eshop"> <FaGithub
-                            style={{color: "black", width: '25px'}}/>
-                        </a>
-                        <a href="https://eshop-dlcusjyb2-gituservn.vercel.app/"> <VscRunAll
-                            style={{color: "black", width: '25px'}}/>
-                        </a>
-                    </div>
-                </div>
-                <div className='project-image'>
-                    <motion.img
-                        transition={transition}
-                        whileHover={{scale: 1.03}}
-                        src={shop}
-                        width='100%'
-                        height='100%'
-                        alt={"shop"}
-                    />
-                </div>
-                <div className='project-info'>
-                    <div>
-                        <h1>Nasa project</h1>
-                        <p><cite>This project was developed using React + Node.js</cite></p>
-                        <p>It has an amazing UI but not fully developed.
-                            Nevertheless I want to show you this website!</p>
-                    </div>
-                    <div className='work_links'>
-                        <a href="https://github.com/MyroniukIvan/nasa-app"> <FaGithub
-                            style={{color: "black", width: '25px'}}/>
-                        </a>
-                    </div>
-                </div>
-                <div className='project-image'>
-                    <motion.img
-                        transition={transition}
-                        whileHover={{scale: 1.03}}
-                        src={nasa}
-                        width='100%'
-                        height='100%'
-                        alt={"shop"}
-                    />
                 </div>
             </div>
         </div>

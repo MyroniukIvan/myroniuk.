@@ -22,7 +22,6 @@ const ProfileDescription = () => {
                 <div className='wrapper'>
 
                     <div className='description'>
-                        {/* <h4>This is the firct project</h4> */}
                         <p
                             className='small-title'
                             ref={(element) => {
@@ -34,7 +33,7 @@ const ProfileDescription = () => {
                                 Ukraine, living in Kyiv.
                             </strong>
                             <br/>
-                            <br/> This experience I was collecting throughout 1.5 years, during multiple freelance
+                            <br/> This experience I was collecting throughout 2 years, during multiple freelance
                             and commercial projects. I was working mostly with people from Ukraine with whom we
                             continuously were exchanging experience.
                         </p>

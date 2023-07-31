@@ -3,67 +3,71 @@ $laptop: 1024px;
 $tablet: 768px;
 $phone: 480px;
 .profile {
-   .container {
-      width: 100%;
-            margin-top: 160px ;
+  .container {
+    width: 100%;
+    margin-top: 160px;
 
-      .wrapper {
+    .wrapper {
 
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         flex-direction: column;
-         margin: 0 0 20px 0;
-         .box {
-            overflow: hidden;
-            //  width: 350px;
-            //  height: 650px;
-            // border-radius: 50%;
-            margin-top: 60px;
-            img {
-               width: 100%;
-            }
-         }
-         .description {
-            @media (max-width: $laptop) {
-               width: 100%;
-            }
-            @media (max-width: $tablet) {
-               width: 100%;
-            }
-            @media (max-width: $phone) {
-               width: 100%;
-            }
-            .small-title {
-               width: 70%;
-               margin: 0 auto;
-               text-align: center;
-               font-size: 1.3em;
-               font-weight: 400;
-               color: rgb(111, 111, 111);
-               line-height: 1.6;
-               strong {
-                  font-size: 1.6em;
-                  color: rgb(4, 4, 4);
-                  margin-bottom: 2.5rem;
-               }
-               @media (max-width: $laptop) {
-                  font-size: 1.4em;
-                  text-align: center;
-                  width: 100%;
-               }
-               @media (max-width: $tablet) {
-                  font-size: 1em;
-                  text-align: left;
-                  width: 100%;
-               }
-               @media (max-width: $phone) {
-                  font-size: 0.8em;
-                  text-align: left;
-                  width: 100%;
-               }
-            }
-         }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 0 20px 0;
+
+      .box {
+        overflow: hidden;
+        width: 350px;
+        height: auto;
+        margin-top: 60px;
+        img {
+          width: 100%;
+        }
       }
-   }
+
+      .description {
+        @media (max-width: $laptop) {
+          width: 100%;
+        }
+        @media (max-width: $tablet) {
+          width: 100%;
+        }
+        @media (max-width: $phone) {
+          width: 100%;
+        }
+
+        .small-title {
+          width: 70%;
+          margin: 0 auto;
+          text-align: center;
+          font-size: 1.3em;
+          font-weight: 400;
+          color: rgb(111, 111, 111);
+          line-height: 1.6;
+
+          strong {
+            font-size: 1.6em;
+            color: rgb(4, 4, 4);
+            margin-bottom: 2.5rem;
+          }
+
+          @media (max-width: $laptop) {
+            font-size: 1.4em;
+            text-align: center;
+            width: 100%;
+          }
+          @media (max-width: $tablet) {
+            font-size: 1em;
+            text-align: left;
+            width: 100%;
+          }
+          @media (max-width: $phone) {
+            font-size: 0.8em;
+            text-align: left;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }

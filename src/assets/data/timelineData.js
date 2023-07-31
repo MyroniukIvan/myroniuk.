@@ -18,5 +18,10 @@ const data = [{
     date: 'Dec. 2022 – Feb. 2023',
     location: 'Kyiv',
     description: ['' + 'Took part in: \n', '• Development of new components\n' + '• Refactoring styled components' + '• Creating animations with connected libraries'],
-}];
+}, {
+        title: 'Baza Trainee',
+        date: 'April. 2023 – Now',
+        location: 'Kyiv',
+        description: ['Created whole back-end architecture, participated in Front-End creating of components and styling. Mostly worked with data transferring of Back-End, admin page and Docker container'],
+    }];
 export default data;

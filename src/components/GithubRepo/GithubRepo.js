@@ -19,7 +19,7 @@ function GithubRepo() {
         fetchRepositories();
     }, []);
 
-    const reposName = ['flowers', 'gericht', 'shop'];
+    const reposName = ['news-test', 'gericht', 'news'];
 
     return (
         <div>

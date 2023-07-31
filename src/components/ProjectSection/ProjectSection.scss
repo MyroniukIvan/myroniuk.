@@ -13,10 +13,11 @@ $phone: 480px;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 250px;
+      gap: 20px;
       .project-info {
          flex: 0.8;
-         // width: 500px;
          margin: 20px 0;
+         padding: 20px;
          h1 {
             font-size: 1.9rem;
             font-weight: 600;
@@ -30,6 +31,9 @@ $phone: 480px;
             opacity: 0.5;
          }
          .work_links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-size: 1.2rem;
 
             .project-link {
@@ -66,6 +70,7 @@ $phone: 480px;
 
          .project-info {
             flex: 0.8;
+            font-size: 15px;
             ul,
             p {
                font-size: 1.2rem;
