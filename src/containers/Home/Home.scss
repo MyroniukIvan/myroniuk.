@@ -4,134 +4,134 @@ $tablet: 768px;
 $phone: 480px;
 
 .Home {
-   max-width: 100vw;
-   width: 100%;
-   height: 100%;
-   top: 0;
-   left: 0;
-   overflow: hidden;
+  max-width: 100vw;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 
-   .container {
-      max-width: 70vw;
-      width: 100%;
-      margin: 0 auto;
+  .container {
+    max-width: 70vw;
+    width: 100%;
+    margin: 0 auto;
 
-      .wrapper {
-         .main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-            margin-bottom: 1rem;
-            // background-color: rgb(225, 225, 225);
-            .main-text {
-               display: flex;
-               justify-content: center;
-               align-items: center;
+    .wrapper {
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        margin-bottom: 1rem;
+        // background-color: rgb(225, 225, 225);
+        .main-text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-               h1 {
-                  flex: 1;
-                  font-size: 3rem;
-                  text-align: center;
-                  font-weight: 800;
-                  @media (max-width: $phone) {
-                     font-size: 2rem;
-                  }
-               }
-               p {
-                  flex: 1;
-               }
+          h1 {
+            flex: 1;
+            font-size: 3rem;
+            text-align: center;
+            font-weight: 800;
+            @media (max-width: $phone) {
+              font-size: 2rem;
             }
-            .link-text {
-               display: flex;
-               align-items: center;
-               margin-top: 1.3rem;
-               h2 {
-                  font-size: 1.3rem;
-                  font-weight: 600;
-                  color: rgb(0, 0, 0);
-                  cursor: pointer;
-                  transition: 400ms;
-                  border-bottom: 2px solid transparent;
-                  &::after {
-                     content: '';
-                     display: block;
-                     width: 0;
-                     height: 2px;
-                     background: #000;
-                     transition: width 0.3s;
-                  }
-
-                  &:hover::after {
-                     width: 100%;
-                     transition: width 0.3s;
-                  }
-
-                  .link {
-                     color: #000;
-                     text-decoration-line: none;
-                     display: inline-block;
-                  }
-               }
-
-               p {
-                  opacity: 0.5;
-                  font-size: 1rem;
-                  margin: 0 20px;
-               }
+          }
+          p {
+            flex: 1;
+          }
+        }
+        .link-text {
+          display: flex;
+          align-items: center;
+          margin-top: 1.3rem;
+          h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            transition: 400ms;
+            border-bottom: 2px solid transparent;
+            &::after {
+              content: '';
+              display: block;
+              width: 0;
+              height: 2px;
+              background: #000;
+              transition: width 0.3s;
             }
-         }
+
+            &:hover::after {
+              width: 100%;
+              transition: width 0.3s;
+            }
+
+            .link {
+              color: #000;
+              text-decoration-line: none;
+              display: inline-block;
+            }
+          }
+
+          p {
+            opacity: 0.5;
+            font-size: 1rem;
+            margin: 0 20px;
+          }
+        }
       }
-   }
+    }
+  }
 }
 
 @media (max-width: $desktop) {
-   .Home {
-      .container {
-         max-width: 90vw;
-         .wrapper {
-            .main {
-               .link-text {
-                  h2 {
-                  }
-               }
+  .Home {
+    .container {
+      max-width: 90vw;
+      .wrapper {
+        .main {
+          .link-text {
+            h2 {
             }
-         }
+          }
+        }
       }
-   }
+    }
+  }
 }
 @media (max-width: $laptop) {
 }
 @media (max-width: $tablet) {
-   .Home {
-      .container {
-         max-width: 90vw;
-         .wrapper {
-            .main {
-               .link-text {
-                  h2 {
-                     font-size: 1rem;
-                  }
-               }
+  .Home {
+    .container {
+      max-width: 90vw;
+      .wrapper {
+        .main {
+          .link-text {
+            h2 {
+              font-size: 1rem;
             }
-         }
+          }
+        }
       }
-   }
+    }
+  }
 }
 @media (max-width: $phone) {
-   .Home {
-      .container {
-         max-width: 90vw;
-         .wrapper {
-            .main {
-               .link-text {
-                  h2 {
-                     font-size: 0.9rem;
-                  }
-               }
+  .Home {
+    .container {
+      max-width: 90vw;
+      .wrapper {
+        .main {
+          .link-text {
+            h2 {
+              font-size: 0.9rem;
             }
-         }
+          }
+        }
       }
-   }
+    }
+  }
 }

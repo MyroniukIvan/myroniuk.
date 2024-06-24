@@ -7,103 +7,103 @@ $tablet: 768px;
 $phone: 480px;
 
 .section-design {
-   height: 100%;
+  height: 100%;
 
-   .section-grid {
-      .container {
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         grid-gap: 100px 100px;
-         margin: 5rem 0 5rem 0;
-         justify-content: center;
-         @media (max-width: $laptop) {
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 70px 50px;
-         }
-         @media (max-width: $tablet) {
-            grid-template-columns: repeat(1, 1fr);
-         }
-
-         @media (max-width: $phone) {
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 50px;
-         }
-
-         .wrapper {
-            &:nth-child(even) {
-               justify-self: end;
-               // top: 25%;
-               @media (max-width: $laptop) {
-                  grid-template-columns: repeat(2, 1fr);
-               }
-               @media (max-width: $tablet) {
-                  grid-template-columns: repeat(2, 1fr);
-                  top: 0;
-               }
-
-               @media (max-width: $phone) {
-                  grid-template-columns: repeat(1, 1fr);
-                  top: 0;
-               }
-            }
-            background-color: rgb(244, 244, 244);
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-             width: 100%;
-             height: 100%;
-            cursor: pointer;
-
-            img {
-               width: 100%;
-               // height: 100%;
-               // position: absolute;
-               bottom: 0;
-               border-radius: 10px;
-               filter: grayscale(50%);
-               &:hover {
-                  filter: grayscale(0%);
-               }
-            }
-            .project-info {
-               position: absolute;
-               cursor: pointer;
-
-               // left: 0px;
-               // bottom: 0;
-               // background-color: white;
-
-               margin: 20px 20px 30px;
-               // padding: 10px 40px 20px;
-               h4 {
-                  background-color: rgb(255, 255, 255);
-                  color: rgb(0, 0, 0);
-                  margin-bottom: 20px;
-                  padding: 18px 32px 18px 32px;
-                  text-transform: uppercase;
-                  @media (max-width: $laptop) {
-                  }
-                  @media (max-width: $tablet) {
-                     background-color: rgb(255, 255, 255);
-                     padding: 18px 32px 18px 32px;
-                     font-size: 16px;
-                  }
-
-                  @media (max-width: $phone) {
-                     padding: 18px 32px 18px 32px;
-                     font-size: 16px;
-                  }
-               }
-               .project-link {
-                  background-color: rgb(254, 254, 254);
-                  color: rgb(0, 0, 0);
-                  padding: 18px 32px 18px 32px;
-                  font-size: 16px;
-                  text-decoration: none;
-                  font-weight: 600;
-               }
-            }
-         }
+  .section-grid {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 100px 100px;
+      margin: 5rem 0 5rem 0;
+      justify-content: center;
+      @media (max-width: $laptop) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 70px 50px;
       }
-   }
+      @media (max-width: $tablet) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      @media (max-width: $phone) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+      }
+
+      .wrapper {
+        &:nth-child(even) {
+          justify-self: end;
+          // top: 25%;
+          @media (max-width: $laptop) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          @media (max-width: $tablet) {
+            grid-template-columns: repeat(2, 1fr);
+            top: 0;
+          }
+
+          @media (max-width: $phone) {
+            grid-template-columns: repeat(1, 1fr);
+            top: 0;
+          }
+        }
+        background-color: rgb(244, 244, 244);
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+
+        img {
+          width: 100%;
+          // height: 100%;
+          // position: absolute;
+          bottom: 0;
+          border-radius: 10px;
+          filter: grayscale(50%);
+          &:hover {
+            filter: grayscale(0%);
+          }
+        }
+        .project-info {
+          position: absolute;
+          cursor: pointer;
+
+          // left: 0px;
+          // bottom: 0;
+          // background-color: white;
+
+          margin: 20px 20px 30px;
+          // padding: 10px 40px 20px;
+          h4 {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            margin-bottom: 20px;
+            padding: 18px 32px 18px 32px;
+            text-transform: uppercase;
+            @media (max-width: $laptop) {
+            }
+            @media (max-width: $tablet) {
+              background-color: rgb(255, 255, 255);
+              padding: 18px 32px 18px 32px;
+              font-size: 16px;
+            }
+
+            @media (max-width: $phone) {
+              padding: 18px 32px 18px 32px;
+              font-size: 16px;
+            }
+          }
+          .project-link {
+            background-color: rgb(254, 254, 254);
+            color: rgb(0, 0, 0);
+            padding: 18px 32px 18px 32px;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
 }

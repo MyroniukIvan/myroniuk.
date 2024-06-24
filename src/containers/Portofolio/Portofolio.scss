@@ -1,23 +1,23 @@
 .work {
-   .container {
-      // max-width: 80vw;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      width: 100%;
-      margin: 0 auto;
-      .background {
-         color: rgb(255, 255, 255);
-         position: absolute;
-         font-size: 18vw;
-         font-weight: 700;
-         z-index: -1;
-         text-shadow: 0 0 29px rgba(0, 0, 0, 0.05);
-         top: 0;
-      }
-      .wrapper {
-         width: 70vw;
-         margin: 3rem auto;
-      }
-   }
+  .container {
+    // max-width: 80vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    .background {
+      color: rgb(255, 255, 255);
+      position: absolute;
+      font-size: 18vw;
+      font-weight: 700;
+      z-index: -1;
+      text-shadow: 0 0 29px rgba(0, 0, 0, 0.05);
+      top: 0;
+    }
+    .wrapper {
+      width: 70vw;
+      margin: 3rem auto;
+    }
+  }
 }
